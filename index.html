@@ -159,9 +159,31 @@
 
   <div id="contact" class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">Contact us <!-- <span class="text-muted">Checkmate.</span> --></h2>
-      <p class="lead"></p>
-      <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+      <div>
+        <h2 class="featurette-heading">Contact us <!-- <span class="text-muted">Checkmate.</span> --></h2>
+        <p class="lead"></p>
+      </div>
+      <div>
+        <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+          <div class="form-group">
+            <label for="formGroupName">Name</label>
+            <input type="text" class="form-control" id="formGroupName" placeholder="Enter with you name">
+          </div>
+          <div class="form-group">
+            <label for="formGroupEmail">Email</label>
+            <input type="text" class="form-control" id="formGroupEmail" placeholder="Enter with your email">
+          </div>
+          <div class="form-group">
+            <label for="formGroupMessage">Message</label>
+            <input type="text" class="form-control" id="formGroupMessage" placeholder="Enter with your message">
+          </div>
+          <div>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+          </div>
+        </form>
+      </div>
+      <!-- <form action="mailto:someone@example.com" method="post" enctype="text/plain">
         Name:<br>
         <input type="text" name="name"><br>
         E-mail:<br>
@@ -170,7 +192,7 @@
         <input type="text" name="comment" size="50"><br><br>
         <input type="submit" value="Send">
         <input type="reset" value="Reset">
-      </form>
+      </form> -->
     </div>
     <div class="col-md-5">
       <img class="featurette-image img-responsive center-block mail" src="images/Icons/mail.svg" alt="Contact us image">
