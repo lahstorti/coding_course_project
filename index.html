@@ -10,8 +10,9 @@
   <link href='bootstrap-3.3.7-dist/css/bootstrap.css' rel='stylesheet'>
   <link href="carousel.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
-  <script src="jquery-3.3.1.min.js"></script>
-  <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="ui.js"></script>
 </head>
 
 
@@ -31,14 +32,14 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand app-name" href="#name"><strong>Easy Training</strong></a>
+            <a class="navbar-brand app-name" href="#"><strong>Easy Training</strong></a>
           </div>
           <div id="navbar" class="navbar-collapse collapse menu">
             <ul class="nav navbar-nav">
-              <li><a href="#myCarousel">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#hiw">How it works</a></li>
-              <li><a href="#contact">Contact us</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a id="lnk-about">About</a></li>
+              <li><a id="lnk-hiw">How it works</a></li>
+              <li><a id="lnk-contact">Contact us</a></li>
             </ul>
           </div>
         </div>
@@ -64,7 +65,7 @@
           <div class="carousel-caption">
             <h1>A complete platform for gym and personal trainer professionals</h1>
             <p>Manage your students, schedule training plans, follow up, etc.</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Try now</a></p>
+            <p><a id="btn-trynow" class="btn btn-lg btn-primary" role="button">Try now</a></p>
           </div>
         </div>
       </div>
@@ -74,7 +75,7 @@
           <div class="carousel-caption">
             <h1>"We believe technology and sports are complementing each other, and our goal is to make them accessible to everyone."</h1>
             <p>- Easy training team</p>
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            <p><a id="btn-learn" class="btn btn-lg btn-primary" role="button">Learn more</a></p>
           </div>
         </div>
       </div>
@@ -131,11 +132,11 @@
 
   <!-- START THE FEATURETTES -->
 
-  <!-- <hr class="featurette-divider"> -->
+  <hr id="about" class="featurette-divider">
 
-  <div id="about" class="row featurette">
+  <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">About us <!-- <span class="text-muted">It'll blow your mind.</span> --> </h2>
+      <h2 class="featurette-heading">About us</h2>
       <p class="lead">We are </p>
     </div>
     <div class="col-md-5">
@@ -143,11 +144,11 @@
     </div>
   </div>
 
-  <hr class="featurette-divider">
+  <hr id="hiw" class="featurette-divider">
 
-  <div id="hiw" class="row featurette">
+  <div  class="row featurette">
     <div class="col-md-7 col-md-push-5">
-      <h2 class="featurette-heading">How it works <!-- <span class="text-muted">See for yourself.</span> --></h2>
+      <h2 class="featurette-heading">How it works</h2>
       <p class="lead"></p>
     </div>
     <div class="col-md-5 col-md-pull-7">
@@ -155,48 +156,41 @@
     </div>
   </div>
 
-  <hr class="featurette-divider">
+  <hr id="contact" class="featurette-divider">
 
-  <div id="contact" class="row featurette">
-    <div class="col-md-7">
-      <div>
-        <h2 class="featurette-heading">Contact us <!-- <span class="text-muted">Checkmate.</span> --></h2>
-        <p class="lead"></p>
+  <div class="row featurette">
+      <div class="col-xs-10">
+        <h2 class="featurette-heading">Contact us</h2>
+        <p class="lead">If you have anything to ask or tell, please send us a message.</p>
       </div>
-      <div>
-        <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-          <div class="form-group">
-            <label for="formGroupName">Name</label>
-            <input type="text" class="form-control" id="formGroupName" placeholder="Enter with you name">
-          </div>
-          <div class="form-group">
-            <label for="formGroupEmail">Email</label>
-            <input type="text" class="form-control" id="formGroupEmail" placeholder="Enter with your email">
-          </div>
-          <div class="form-group">
-            <label for="formGroupMessage">Message</label>
-            <input type="text" class="form-control" id="formGroupMessage" placeholder="Enter with your message">
-          </div>
-          <div>
-            <input type="submit" value="Send">
-            <input type="reset" value="Reset">
-          </div>
-        </form>
+      <div class="col-xs-2">
+        <img class="mail" src="images/Icons/mail.svg" alt="Contact us image">
       </div>
-      <!-- <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-        Name:<br>
-        <input type="text" name="name"><br>
-        E-mail:<br>
-        <input type="text" name="mail"><br>
-        Comment:<br>
-        <input type="text" name="comment" size="50"><br><br>
-        <input type="submit" value="Send">
-        <input type="reset" value="Reset">
-      </form> -->
+  </div>
+
+  <div class="row featurette">
+    <div class="col-sm-12">
+      <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="formGroupName">Name</label>
+          <input type="text" class="form-control" id="formGroupName" placeholder="Enter with your name">
+        </div>
+        <div class="form-group">
+          <label for="formGroupEmail">Email</label>
+          <input type="text" class="form-control" id="formGroupEmail" placeholder="Enter with your email">
+        </div>
+        <div class="form-group">
+          <label for="formGroupMessage">Message</label>
+          <textarea class="form-control" id="formGroupMessage">
+          </textarea>
+        </div>
+        <div>
+          <input type="submit" value="Send">
+          <input type="reset" value="Reset">
+        </div>
+      </form>
     </div>
-    <div class="col-md-5">
-      <img class="featurette-image img-responsive center-block mail" src="images/Icons/mail.svg" alt="Contact us image">
-    </div>
+
   </div>
 
   <hr class="featurette-divider">
@@ -210,14 +204,13 @@
   <p>&copy; 2018 My Personal Trainer app, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
 </footer> -->
 
-</div><!-- /.container -->
+</div> <!-- /.container -->
 
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-<script> </script>
 
 </body>
 
