@@ -38,7 +38,7 @@
 
 .mobile-app {
   width: 80%;
-  margin: 100px 100px 0 0;
+  margin: 100px 100px 30px 0;
 }
 
 .mail {
@@ -98,3 +98,17 @@
 #followus {
   color: white;
 }
+
+footer {
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .disappear {
+    display: none;
+  }
+}
+
+/* .lais {
+    display: block;
+} */
