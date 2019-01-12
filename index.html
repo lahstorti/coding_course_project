@@ -211,14 +211,14 @@
 
     <div class="row featurette">
       <div class="col-sm-12">
-        <form enctype="text/plain">
+        <form data-toggle="validator" role="form">
 
           <label data-i18n="contact.name.label" for="Name"></label>
           <div class="input-group form-group">
             <span class="input-group-addon">
               <span class="glyphicon glyphicon-user"></span>
             </span>
-            <input data-i18n="[placeholder]contact.name.placeholder"type="text" class="form-control" id="Name">
+            <input data-i18n="[placeholder]contact.name.placeholder" type="text" class="form-control" id="Name" required>
           </div>
 
           <label data-i18n="contact.email.label" for="Email"></label>
@@ -226,7 +226,7 @@
             <span class="input-group-addon">
               <span class="input-group-text" id="basic-addon1">@</span>
             </span>
-            <input data-i18n="[placeholder]contact.email.placeholder" type="text" class="form-control" id="Email">
+            <input data-i18n="[placeholder]contact.email.placeholder" type="email" class="form-control" id="Email" required>
           </div>
 
           <label data-i18n="contact.message" for="Message"></label>
@@ -234,8 +234,7 @@
             <span class="input-group-addon">
               <span class="glyphicon glyphicon-comment"></span>
             </span>
-            <textarea class="form-control" id="Message">
-            </textarea>
+            <textarea class="form-control" id="Message" required></textarea>
           </div>
 
           <div>
@@ -283,7 +282,6 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-
 
 </body>
 
