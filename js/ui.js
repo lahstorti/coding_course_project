@@ -7,6 +7,13 @@ $(document).ready(function () {
 
   const refreshLabels = () => {
     $('nav').localize();
+    $('#myCarousel').localize();
+    $('.marketing').localize();
+    $('#translation-about').localize();
+    $('#translation-hiw').localize();
+    $('#translation-contact').localize();
+    $('#lab_social_icon_footer').localize();
+    $('#footer').localize();
   }
 
   i18next

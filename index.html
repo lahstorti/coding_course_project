@@ -56,10 +56,10 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse menu">
             <ul class="nav navbar-nav">
-              <li><a href="#">Home</a></li>
-              <li><a id="lnk-about">About</a></li>
-              <li><a id="lnk-hiw">How it works</a></li>
-              <li><a id="lnk-contact">Contact us</a></li>
+              <li><a data-i18n="nav.home" href="#"></a></li>
+              <li><a data-i18n="nav.about" id="lnk-about"></a></li>
+              <li><a data-i18n="nav.hiw" id="lnk-hiw"></a></li>
+              <li><a data-i18n="nav.contact" id="lnk-contact"></a></li>
             </ul>
             <div class="nav navbar-nav flag-container pull-right">
               <img onclick="i18next.changeLanguage('ptBR')" class="flag my-2 my-sm-0" src="images/Icons/brazil-flag.svg">
@@ -87,9 +87,9 @@
         <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
         <div class="container">
           <div class="carousel-caption">
-            <h1>A complete platform for gym and personal trainer professionals</h1>
-            <p>Manage your students, schedule training plans, follow up, etc.</p>
-            <p><a id="btn-trynow" target="_blank" href="https://www.youtube.com/watch?v=36dtEKfaGCE&list=PLw0HRomNcM9RhPheynaN26NhAOlErNuzP" class="btn btn-lg btn-primary" role="button">See demo</a></p>
+            <h1 data-i18n="carousel.headline1"></h1>
+            <p data-i18n="carousel.p1"></p>
+            <p><a id="btn-trynow" data-i18n="carousel.button1" target="_blank" href="https://www.youtube.com/watch?v=36dtEKfaGCE&list=PLw0HRomNcM9RhPheynaN26NhAOlErNuzP" class="btn btn-lg btn-primary" role="button"></a></p>
           </div>
         </div>
       </div>
@@ -98,9 +98,9 @@
         <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
         <div class="container">
           <div class="carousel-caption">
-            <h1>"We believe technology and sports are complementing each other, and our goal is to make them accessible to everyone."</h1>
-            <p>- Easy training team</p>
-            <p><a id="btn-learn" class="btn btn-lg btn-primary" role="button">Learn more</a></p>
+            <h1 data-i18n="carousel.headline2"></h1>
+            <p data-i18n="carousel.p2"></p>
+            <p><a data-i18n="carousel.button2" id="btn-learn" class="btn btn-lg btn-primary" role="button"></a></p>
           </div>
         </div>
       </div>
@@ -109,12 +109,12 @@
 
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+      <span data-i18n="carousel.previous" class="sr-only"></span>
     </a>
 
     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+      <span data-i18n="carousel.next" class="sr-only"></span>
     </a>
 
   </div>
@@ -132,20 +132,20 @@
 
       <div class="col-lg-4 cards">
         <img class="img-circle" src="images/Icons/dumbbell.svg" alt="Dumbbell image" width="140" height="140">
-        <h2>150 +</h2>
-        <h2>Workouts</h2>
+        <h2 data-i18n="container.workouts1"></h2>
+        <h2 data-i18n="container.workouts2"></h2>
       </div>
       <!-- /.col-lg-4 -->
       <div class="col-lg-4 cards">
         <img class="img-circle" src="images/Icons/notepad.svg" alt="Notepad image" width="140" height="140">
-        <h2>Team</h2>
-        <h2>Management</h2>
+        <h2 data-i18n="container.team"></h2>
+        <h2 data-i18n="container.management"></h2>
       </div>
       <!-- /.col-lg-4 -->
       <div class="col-lg-4 cards">
         <img class="img-circle" src="images/Icons/music-player.svg" alt="Music player image" width="140" height="140">
-        <h2>Easy</h2>
-        <h2>Access</h2>
+        <h2 data-i18n="container.easy"></h2>
+        <h2 data-i18n="container.access"></h2>
       </div>
       <!-- /.col-lg-4 -->
     </div>
@@ -157,13 +157,13 @@
     <!-- ABOUT US -->
     <hr id="about" class="featurette-divider">
 
-    <div class="row featurette">
+    <div id="translation-about" class="row featurette">
 
       <div class="col-sm-7">
-        <h2 class="featurette-heading">About us</h2>
-        <p class="lead">At Easy Training, we believe technology and sports complement each other, and our goal is to make them accessible to everyone.</p>
-        <p class="lead">We are obsessively passionate about making people's lives easier thru the use of technology.</p>
-        <p class="lead">Our team is composed of a group of individuals with deep expertise in technology and sports, with several years of experience into different cultures and practices. </p>
+        <h2 data-i18n="about.us" class="featurette-heading"></h2>
+        <p data-i18n="about.p1" class="lead"></p>
+        <p data-i18n="about.p2" class="lead"></p>
+        <p data-i18n="about.p3" class="lead"></p>
       </div>
 
       <div class="col-sm-5 disappear">
@@ -175,19 +175,19 @@
     <!-- HOW IT WORKS -->
     <hr id="hiw" class="featurette-divider">
 
-    <div  class="row featurette">
+    <div id="translation-hiw" class="row featurette">
 
       <div class="col-sm-5">
         <img class="mobile-app" src="images/Icons/mobile-app.svg" alt="Mobile app image">
       </div>
 
       <div class="col-sm-7">
-        <h2 class="featurette-heading">How it works</h2>
-        <p class="lead">Let's show you how Easy Training App works in three simple steps:</p>
+        <h2 data-i18n="hiw.head" class="featurette-heading"></h2>
+        <p data-i18n="hiw.p1" class="lead"></p>
         <ol class="lead">
-          <li>The administrator registers the users that will have access to the platform: Instructors/personal trainers and gym students;</li>
-          <li>The instructor/personal trainer creates one or more training plans for the students he or she are responsible for by relying on a database of pre-defined workouts;</li>
-          <li>The gym students visualise the training plans assigned by the instructor!</li>
+          <li data-i18n="hiw.item1"></li>
+          <li data-i18n="hiw.item2"></li>
+          <li data-i18n="hiw.item3"></li>
         </ol>
       </div>
 
@@ -196,11 +196,11 @@
     <!-- CONTACT US -->
     <hr id="contact" class="featurette-divider">
 
-    <div class="row featurette">
+    <div id="translation-contact" class="row featurette">
 
       <div class="col-xs-10">
-        <h2 class="featurette-heading">Contact us</h2>
-        <p class="lead">If you have anything to ask or tell, please send us a message.</p>
+        <h2 data-i18n="contact.us" class="featurette-heading"></h2>
+        <p data-i18n="contact.p1" class="lead"></p>
       </div>
 
       <div class="col-xs-2">
@@ -213,23 +213,23 @@
       <div class="col-sm-12">
         <form enctype="text/plain">
 
-          <label for="Name">Name</label>
+          <label data-i18n="contact.name.label" for="Name"></label>
           <div class="input-group form-group">
             <span class="input-group-addon">
               <span class="glyphicon glyphicon-user"></span>
             </span>
-            <input type="text" class="form-control" id="Name" placeholder="Enter with your name">
+            <input data-i18n="[placeholder]contact.name.placeholder"type="text" class="form-control" id="Name">
           </div>
 
-          <label for="Email">Email</label>
+          <label data-i18n="contact.email.label" for="Email"></label>
           <div class="input-group form-group">
             <span class="input-group-addon">
               <span class="input-group-text" id="basic-addon1">@</span>
             </span>
-            <input type="text" class="form-control" id="Email" placeholder="Enter with your email">
+            <input data-i18n="[placeholder]contact.email.placeholder" type="text" class="form-control" id="Email">
           </div>
 
-          <label for="Message">Message</label>
+          <label data-i18n="contact.message" for="Message"></label>
           <div class="input-group form-group">
             <span class="input-group-addon">
               <span class="glyphicon glyphicon-comment"></span>
@@ -239,8 +239,8 @@
           </div>
 
           <div>
-            <input type="submit" class="btn btn-primary" value="Send">
-            <input type="reset" class="btn btn-default" value="Reset">
+            <input data-i18n="[value]contact.send" type="submit" class="btn btn-primary">
+            <input data-i18n="[value]contact.reset"  type="reset" class="btn btn-default">
           </div>
 
         </form>
@@ -259,7 +259,7 @@
   <section id="lab_social_icon_footer">
     <div class="container">
       <div class="text-center center-block">
-        <h4 id="followus">Follow us</h4>
+        <h4 data-i18n="footer.followUs" id="followus">Follow us</h4>
         <a target="_blank" href="https://www.facebook.com/apptreinofacil/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
         <a href="#"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
         <a href="#"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
@@ -270,9 +270,9 @@
 
   <!-- FOOTER -->
   <footer>
-    <div class="text-center">
-      <p>&copy; 2018 Easy Training app, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      <p>Icons made by <a target="_blank" href="https://www.flaticon.com/authors/freepik">Freepik</a> and
+    <div id="footer" class="text-center">
+      <p data-i18n="footer.p1"></p>
+      <p data-i18n="footer.p2">Icons made by <a target="_blank" href="https://www.flaticon.com/authors/freepik">Freepik</a> and
         <a target="_blank" href="https://www.flaticon.com/authors/srip">Srip</a>
         from <a target="_blank" href="https://www.flaticon.com">www.flaticon.com</a>, and
         <a target="_blank" href="https://dryicons.com">dryicons.com</a>
