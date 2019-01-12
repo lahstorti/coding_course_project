@@ -52,6 +52,7 @@ const ptBR = {
       message: 'Menssage',
       send: 'Enviar',
       reset: 'Limpar',
+      thanks: 'Obrigado pelo envio, entraremos em contato em breve.',
     },
     footer: {
       followUs: 'Siga-nos',

@@ -53,6 +53,7 @@ const en =
       message: 'Message',
       send: 'Send',
       reset: 'Reset',
+      thanks: 'Thanks for submiting the information, we will contact you soon.',
     },
     footer: {
       followUs: 'Follow us',

@@ -49,6 +49,26 @@ $(document).ready(function () {
   $("#lnk-contact").on("click", function () {
     scroll("#contact");
   });
+
+  $("form").submit(function( event ) {
+    event.preventDefault();
+
+    const payload = { 
+      "name" : $("#Name").val(),
+      "email" : $("#Email").val(),
+      "message" : $("#Message").val()
+    }
+
+    $.post( "https://wa9cju1y20.execute-api.us-east-1.amazonaws.com/prod/api/mail", payload)
+    .done(function( data ) {
+      console.log('Response was: ' + data);
+      $("#form-container > form").remove();
+      const thanksMessage = i18next.t('contact.thanks');
+      $("#form-container").append($('<div><span>' + thanksMessage + '</span></div>'));
+    });
+
+  });
+
 });
 
 $(function () {
