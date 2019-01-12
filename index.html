@@ -17,12 +17,12 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>Easy Training</title>
-  
+
   <link href='css/bootstrap.css' rel='stylesheet'>
   <link href="css/carousel.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  
+
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/i18next.js"></script>
@@ -31,7 +31,7 @@
   <script type="text/javascript" src="js/i18n/en.js"></script>
   <script type="text/javascript" src="js/i18n/ptBR.js"></script>
   <script type="text/javascript" src="js/ui.js"></script>
-  
+
 </head>
 
 <!-- TEMPLATE FROM https://getbootstrap.com/docs/3.3/examples/carousel/ -->
@@ -61,9 +61,9 @@
               <li><a id="lnk-hiw">How it works</a></li>
               <li><a id="lnk-contact">Contact us</a></li>
             </ul>
-            <div class="container pull-right">
-              <img class="flag my-2 my-sm-0" src="images/Icons/brazil-flag.svg">
-              <img class="flag my-2 my-sm-0" src="images/Icons/uk-flag.svg">
+            <div class="nav navbar-nav flag-container pull-right">
+              <img onclick="i18next.changeLanguage('ptBR')" class="flag my-2 my-sm-0" src="images/Icons/brazil-flag.svg">
+              <img onclick="i18next.changeLanguage('en')" class="flag my-2 my-sm-0" src="images/Icons/uk-flag.svg">
             </div>
           </div>
         </div>
@@ -283,7 +283,7 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  
+
 
 </body>
 

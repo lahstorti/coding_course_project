@@ -49,6 +49,11 @@
 
 .flag {
    height: 20px;
+   cursor: pointer;
+}
+
+.flag-container {
+  padding: 10px;
 }
 
 
