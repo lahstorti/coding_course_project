@@ -47,6 +47,15 @@
   padding-top: 100px;
 }
 
+.flag {
+   height: 20px;
+   cursor: pointer;
+}
+
+.flag-container {
+  padding: 10px;
+}
+
 
 /* SOCIAL MEDIA FOOTER */
 /* Created by 1WD.tv - Freelance Web Designer Training. Available at https://codepen.io/1wdtv/pen/ojKxaE */
