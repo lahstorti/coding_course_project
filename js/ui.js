@@ -59,14 +59,19 @@ $(document).ready(function () {
       "message" : $("#Message").val()
     }
 
-    $.post( "https://wa9cju1y20.execute-api.us-east-1.amazonaws.com/prod/api/mail", payload)
-    .done(function( data ) {
-      console.log('Response was: ' + data);
+    $.ajax({
+      url: "https://wa9cju1y20.execute-api.us-east-1.amazonaws.com/prod/api/mail",
+      type: "POST",
+      crossDomain: true,
+      data: JSON.stringify(payload),
+      dataType: "json",
+      contentType: "application/json"
+    }).done( res => {
       $("#form-container > form").remove();
-      const thanksMessage = i18next.t('contact.thanks');
-      $("#form-container").append($('<div><span>' + thanksMessage + '</span></div>'));
+        const thanksMessage = i18next.t('contact.thanks');
+        $("#form-container").append($('<div><span>' + thanksMessage + '</span></div>'));
     });
-
+    
   });
 
 });
