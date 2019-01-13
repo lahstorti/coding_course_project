@@ -19,29 +19,25 @@ const en =
       next: 'Next'
     },
     container: {
-      workouts1: '150 +',
-      workouts2: 'Workouts',
-      team: 'Team',
-      management: 'Management',
-      easy: 'Easy',
-      access: 'Access',
+      workouts1: 'More than 150 preset workouts',
+      team: 'Team management without implemantation cost',
+      easy: 'Easy access in multiple devices',
     },
     about: {
       us: 'About us',
-      p1: 'At Easy Training, we believe technology and sports complement each other, and our goal is to make them accessible to everyone.',
-      p2: "We are obsessively passionate about making people's lives easier thru the use of technology.",
-      p3: 'Our team is composed of a group of individuals with deep expertise in technology and sports, with several years of experience into different cultures and practices.',
+      p1: 'We, from the Easy Training team, decided to put together two passions, sport and technology, and create an app to make the life of people attending the gym easier. Our goal was to develop an application in which it is possible to access a training program in any device (cell phone, tablet, laptop or PC).',
+      p2: "Our team is composed of sports and technology professionals, ensuring that our solutions are sufficiently robust, accessible and at the same time according to the needs of our users.",
     },
     hiw: {
       head: 'How it works',
       p1: "Let's show you how Easy Training App works in three simple steps:",
-      item1: 'The administrator registers the users that will have access to the platform: Instructors/personal trainers and gym students;',
-      item2: 'The instructor/personal trainer creates one or more training plans for the students that he or she are responsible for, by relying on a database of pre-defined workouts;',
-      item3: 'The gym students visualise the training plans assigned by the instructor!',
+      item1: 'First, the administrator registers the users ( Instructors/personal trainers and gym students);',
+      item2: 'After registration, the  Instructors/personal trainers will receive access to the platform and will have a list of preset exercises available, from which they can create one or more training plans for the students that he or she is responsible. In addition to the exercises already available, the instrutor can register as many as he deems necessary.',
+      item3: 'After that, the student can visualise the training plan assigned by the instructor at the desirable device and start his workout!',
     },
     contact: {
       us: 'Contact us',
-      p1: 'If you have anything to ask or tell, please send us a message.',
+      p1: 'Send us a message if you are interested in book a free demo.',
       name:  {
           label: 'Name',
           placeholder: 'Enter your name',
@@ -56,7 +52,7 @@ const en =
       thanks: 'Thanks for submiting the information, we will contact you soon.',
     },
     footer: {
-      followUs: 'Follow us',
+      followUs: 'Follow us on Facebook',
       p1: '© 2018 Easy Training app, Inc. · Privacy · Terms',
     },
     head: {
