@@ -58,6 +58,9 @@ const en =
     footer: {
       followUs: 'Follow us',
       p1: '© 2018 Easy Training app, Inc. · Privacy · Terms',
+    },
+    head: {
+      title: 'Easy Training',
     }
   }
 }

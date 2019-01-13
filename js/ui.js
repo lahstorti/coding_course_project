@@ -14,12 +14,13 @@ $(document).ready(function () {
     $('#translation-contact').localize();
     $('#lab_social_icon_footer').localize();
     $('#footer').localize();
+    $('title').localize();
   }
 
   i18next
     .use(i18nextBrowserLanguageDetector)
     .init({
-      fallbackLng: 'en',
+      fallbackLng: 'ptBR',
       debug: true,
       resources: {
         en: en,
@@ -53,7 +54,7 @@ $(document).ready(function () {
   $("form").submit(function( event ) {
     event.preventDefault();
 
-    const payload = { 
+    const payload = {
       "name" : $("#Name").val(),
       "email" : $("#Email").val(),
       "message" : $("#Message").val()
@@ -71,7 +72,7 @@ $(document).ready(function () {
         const thanksMessage = i18next.t('contact.thanks');
         $("#form-container").append($('<div><span>' + thanksMessage + '</span></div>'));
     });
-    
+
   });
 
 });
@@ -80,7 +81,7 @@ $(function () {
   var navMain = $(".navbar-collapse"); // avoid dependency on #id
   // "a:not([data-toggle])" - to avoid issues caused
   // when you have dropdown inside navbar
-  navMain.on("click", "a:not([data-toggle])", null, function () {
+  navMain.on("click", "a:not([data-toggle]),img", null, function () {
     navMain.collapse('hide');
   });
 });

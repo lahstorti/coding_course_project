@@ -57,6 +57,9 @@ const ptBR = {
     footer: {
       followUs: 'Siga-nos',
       p1: '© 2018 Easy Training app, Inc. · Privacidade · Termos',
+    },
+    head: {
+      title: 'Treino Fácil',
     }
   }
 }
