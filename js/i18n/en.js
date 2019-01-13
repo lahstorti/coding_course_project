@@ -25,7 +25,7 @@ const en =
     },
     about: {
       us: 'About us',
-      p1: 'We, from the Easy Training team, decided to put together two passions, sport and technology, and create an app to make the life of people attending the gym easier. Our goal was to develop an application in which it is possible to access a training program in any device (cell phone, tablet, laptop or PC).',
+      p1: 'We, from the Easy Training team, decided to put together two passions, sport and technology, and create an app to make the life of people attending the gym easier. Our goal was to develop an application in which it was possible to access a training program in any device (cell phone, tablet, laptop or PC).',
       p2: "Our team is composed of sports and technology professionals, ensuring that our solutions are sufficiently robust, accessible and at the same time according to the needs of our users.",
     },
     hiw: {
